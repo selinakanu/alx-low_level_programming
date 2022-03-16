@@ -1,23 +1,13 @@
-\n');
-}
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
+#include <unistd.h>
 
 /**
-* print_alphabet - This is a print_alphabet function
-*
-* Return: Always 0 (Success)
-*/
-
-void print_alphabet(void)
+ * _putchar - writes the character c to stout
+ * @c: The character to print
+ *
+ * Return on sucess: 1
+ * On error, -1 is returned, and errno is set appropriately
+ */
+int _putchar(char c)
 {
-	int x;
-
-	for (x = 'a'; x <= 'z'; x++)
-	{
-		_putchar(x);
-	}
-	_putchar('
+	return (write(1, &c, 1));
 }
-
