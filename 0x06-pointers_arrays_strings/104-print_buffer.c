@@ -1,5 +1,6 @@
-task 13
 #include "main.h"
+#include <stdio.h>
+
 /**
  * print_buffer - Prints a buffer
  * @b: char
